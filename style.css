@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(90 108 157);
+    color: white;
+}
+
+.heading{
+    background-color: rgb(0 1 128);
+    color: white;
+    font-size: 1.5rem;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 1rem;
+}
+
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.choice {
+    height: 170px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  h3{
+    font-size: 1.5rem;
+  }
+
+  img:hover{
+    border: 5px solid transparent;
+  }
+
+  .score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 0.25rem;
+    margin-top: 4rem;
+  }
+
+  #user-score,#comp-score{
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .score{
+    border: 5px solid white;
+    width: 200px;
+    background-color: black;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  .msg-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  #msg{
+    font-size: 2rem;
+    background-color: #0d105c;
+    width: 550px;
+    height: 60px;
+    border-radius: 15px;
+    padding-top: 10px;
+  }
+
+
+  #restart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn{
+    margin-top: 50px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #4000ff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+@media (max-width : 550px ){
+  body{
+    background-color: #483c6d;
+  }
+  .heading{
+    background-color: rgb(8, 8, 82);
+    color: white;
+    font-size: 1rem;
+  }
+  img{
+    height: 100px;
+    width: 100px;
+  }
+  .choices{
+    gap: 20px;
+  }
+  h3{
+    font-size: 1rem;
+  }
+  .score-board{
+    font-size: 1rem;
+    gap: 0.15rem;
+    margin-top: 3rem;
+  }
+
+  #user-score,#comp-score{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .score{
+    border: 3px solid white;
+    width: 150px;
+  }
+  .btn{
+    margin-top: 80px;
+    height: 40px;
+    width: 170px;
+    font-size: 15px;
+  }
+  #msg{
+    font-size: 1.2rem;
+    width: 300px;
+    padding-top: 10px;
+  }
+
+
+
+
+}
