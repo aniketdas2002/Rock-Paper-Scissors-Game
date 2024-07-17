@@ -7,19 +7,16 @@ const compScoreBoard = document.querySelector("#comp-score");
 let compScore = 0;
 let userScore = 0;
 
-
-
 const genCompChoice = () => {
     const options = ["rock","paper","scissors"];
     const randIdx = Math.floor(Math.random() * 3);
     return options[randIdx];
 }
 
-
 const drawGame = () =>  {
     msg.innerText = "Game draw!!";
-    msg.style.backgroundColor = "black";
-    // body.style.backgroundColor = "yellow";
+    msg.style.backgroundColor = "violet";
+    msg.style.color = "blue";
 }
 
 
@@ -28,12 +25,15 @@ const showWinner = (userWin,userChoise,compChoice) => {
         userScore ++;
         userScoreBoard.innerText = userScore;
         msg.innerText = `You win! ${userChoise} beats ${compChoice}`;
-        msg.style.backgroundColor = "green";
+        msg.style.backgroundColor = "gold";
+        msg.style.color = "blue";
+        
     }else{
         compScore ++;
         compScoreBoard.innerText = compScore;
         msg.innerText = `Computer win! ${compChoice} beats ${userChoise}`;
-        msg.style.backgroundColor = "red";
+        msg.style.backgroundColor = "brown";
+        msg.style.color ="yellow";
     }
 }
 
