@@ -81,24 +81,18 @@ body{
     text-align: center;
   }
 
-  .msg-con{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  .msg-con{    
     margin-top: 4rem;
     text-align: center;
   }
   
   #msg{
-    font-size: 2rem;
+    font-size: 1.7rem;
     background-color: #0d105c;
-    width: 550px;
-    height: 60px;
+    display: inline;
+    padding: 1.5rem;
     border-radius: 15px;
-    padding-top: 10px;
   }
-
 
   #restart{
     display: flex;
